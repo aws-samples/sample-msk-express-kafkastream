@@ -153,22 +153,5 @@ mkdir -p /tmp/kafka-streams-state
 chmod 755 /tmp/kafka-streams-state
 ```
 
-### Customization
 
-To modify the stream processing logic, edit the `buildTopology()` method in `MSKStreamsApp.java`.
-
-## Security
-
-For production use with MSK:
-
-1. **SASL/SCRAM Authentication**: Add SASL configuration
-2. **SSL/TLS**: Enable SSL for secure communication
-3. **IAM Authentication**: Use IAM roles for authentication
-
-Example SASL configuration:
-```properties
-kafka.security.protocol=SASL_SSL
-kafka.sasl.mechanism=SCRAM-SHA-512
-kafka.sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="your-username" password="your-password";
-```
 
