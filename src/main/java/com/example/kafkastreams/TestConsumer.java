@@ -20,7 +20,7 @@ public class TestConsumer {
         logger.info("Starting Test Consumer for topic: {}", topic);
 
         Properties props = new Properties();
-        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "boot-x0p.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092");
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "boot-x0p.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "test-consumer-group");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());

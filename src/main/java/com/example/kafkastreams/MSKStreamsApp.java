@@ -38,7 +38,7 @@ public class MSKStreamsApp {
                 "msk-streams-app-format-output-repartition",
                 "msk-streams-app-filter-important-messages-repartition"
             );
-            String bootstrapServers = "boot-x0p.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092";
+            String bootstrapServers = "boot-x0p.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092";
             String inputTopic = "input-topic";
             CreateInternalTopics.createTopics(bootstrapServers, internalTopics, inputTopic);
         } catch (Exception e) {
@@ -85,7 +85,7 @@ public class MSKStreamsApp {
         
         // Basic configuration
         props.put(StreamsConfig.APPLICATION_ID_CONFIG, "msk-streams-app");
-        props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "boot-x0p.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092");
+        props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "boot-x0p.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092");
         
         // Serialization
         props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass().getName());

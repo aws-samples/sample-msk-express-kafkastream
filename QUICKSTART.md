@@ -24,7 +24,7 @@ Create these topics in your MSK cluster:
 - `input-topic`
 - `output-topic` 
 - `important-messages-topic`
-export bs="boot-x0p.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092"
+export bs="boot-x0p.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092"
 ./bin/kafka-topics.sh --bootstrap-server $bs --create --topic input-topic --partitions 9
 ./bin/kafka-topics.sh --bootstrap-server $bs --create --topic output-topic --partitions 9
 ./bin/kafka-topics.sh --bootstrap-server $bs --create --topic important-messages-topic --partitions 9

@@ -19,7 +19,7 @@ public class TestProducer {
         logger.info("Starting Test Producer...");
 
         Properties props = new Properties();
-        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "boot-x0p.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.sayemexpressnew.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092");
+        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "boot-x0p.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-wv2.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092,boot-0gc.test.ku53xh.c3.kafka.ap-southeast-2.amazonaws.com:9092");
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         props.put(ProducerConfig.ACKS_CONFIG, "all");
