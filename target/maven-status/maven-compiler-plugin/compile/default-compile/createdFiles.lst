@@ -1,0 +1,6 @@
+com\example\kafkastreams\MSKStreamsApp$Message.class
+com\example\kafkastreams\CreateInternalTopics.class
+com\example\kafkastreams\TestConsumer.class
+com\example\kafkastreams\TestProducer.class
+com\example\kafkastreams\MSKStreamsApp$1.class
+com\example\kafkastreams\MSKStreamsApp.class
